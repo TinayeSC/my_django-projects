@@ -1,0 +1,28 @@
+
+
+
+.row{
+
+	background-color:black;
+	color: white;
+
+}
+
+
+html{
+	background-color:black;
+
+}
+
+#all_polls a{
+
+	color: orange;
+
+}
+
+#all_polls a:hover{
+
+	color: white;
+	cursor: pointer;
+
+}
