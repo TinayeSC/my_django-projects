@@ -1,23 +1,85 @@
-row{ 
 
-  
-
-    background-color: black;
-
-    color: white;
-
-  
-
+.btn{
+  background-color: black;
+  color: white
 }
 
+a{
+  color: white;
+  text-decoration:none;
+}
 
+a.visited{
+  color: white;
+}
 
-button:hover{
-
-  
-
-  color: green;
+a:hover{
+  color: red;
 
   cursor: pointer;
 
 }
+
+#container{
+  color:white;
+  background-image: linear-gradient(to bottom, black, rgba(169, 169, 169, 0.778));
+  background-size; cover
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+
+
+.content{
+  position: relative;
+
+}
+
+.center{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-100%, -100%);
+  transform: translate(-70%, 250%);
+}
+
+
+#myBtn {
+  width: 400px;
+  font-size: 50px;
+  border-block-color: black;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: center;
+}
+
+#myBtn:hover {
+  font-size: 55px;
+  color: black;
+}
+
+
+
+#top{
+  color: white;
+}
+
+
+#welcome{
+  text-justify:auto;
+  text-align: center;
+  font-family: times new roman,serif;
+  font-size: larger;
+  margin-right: 200px;
+  margin-left: 200px;
+
+}
+
+
