@@ -5,15 +5,14 @@
   border-color: black;
 }
 
-a, a.visited {
-  color: white;
-}
-
-a:hover{
-  color: red;
+.btn:hover{
   cursor: pointer;
-
+  color: red;
+  background-color: white;
 }
+
+
+
 
 #container{
   color:white !important;
@@ -25,10 +24,15 @@ a:hover{
   text-justify:auto;
   text-align: center;
   font-family: times new roman,serif;
-  font-size: larger;
+  font-size: xx-large;
   margin-right: 200px;
   margin-left: 200px;
 
+}
+
+h2{
+
+  size: 500px;
 }
 
 
