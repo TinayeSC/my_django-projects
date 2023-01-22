@@ -22,27 +22,14 @@ a:hover{
 #container{
   color:white;
   background-image: linear-gradient(to bottom, black, rgba(169, 169, 169, 0.778));
-  background-size; cover
+  background-size: cover
 }
-
-
-
-
-
-
 
 #top{
   color: white;
 }
 
 
-#welcome{
-  text-justify:auto;
-  text-align: center;
-}
 
 
-.music-link__container{
 
-  size: 100px;
-}
