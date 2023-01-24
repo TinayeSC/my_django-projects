@@ -26,7 +26,7 @@
   #myBtn {
     width: 400px;
     font-size: 50px;
-    border-block-color: black;
+    border-block-color: none;
     background: transparent;
     color: white;
     cursor: pointer;
@@ -35,5 +35,5 @@
   
   #myBtn:hover {
     font-size: 55px;
-    color: black;
+    color: red;
   }
