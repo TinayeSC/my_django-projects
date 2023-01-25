@@ -25,14 +25,127 @@
   color: white;
 }
 
+.container{
+  position: relative;
+}
 
-
-.row{
-  text-align: center;
-
+.container .btn {
+  transition: .1s ease;
+  position: absolute;
+  transform: translate(-160%, 300%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  visibility: hidden;
+  border-radius: 5px;
+  background-color: transparent;
+  border-color: none;
+  font-size: 15px;
+  width: fit-content;
+  
 }
 
 
-p, h1,h2{
-  font-family: 'Times New Roman', Times, serif;
+
+.container:hover .btn{
+  visibility: visible;
+  background-color: transparent;
+  color: white;
+
+
+}
+
+.container .image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.container:hover #vin {
+  opacity:0.2;
+}
+
+
+.container1{
+  position: relative;
+}
+
+
+.container1 .btn {
+  transition: .2s ease;
+  position: absolute;
+  transform: translate(-175%, 300%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  visibility: hidden;
+  border-radius: 5px;
+  background-color: transparent;
+  border-color: none;
+  font-size: 15px;
+  width: fit-content;
+  
+}
+
+.container1:hover .btn{
+  visibility: visible;
+  background-color: transparent;
+  color: white;
+
+
+}
+
+.container1 .image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.container1:hover #cd {
+  opacity:0.2;
+}
+
+
+.container2{
+  position: relative;
+}
+
+
+.container2 .btn {
+  transition: .2s ease;
+  position: absolute;
+  transform: translate(-155%, 300%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  visibility: hidden;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 15px;
+  width: fit-content;
+  
+}
+
+.container2:hover .btn{
+  visibility: visible;
+  background-color: transparent;
+  color: white;
+
+
+}
+
+.container2 .image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.container2:hover #cass {
+  opacity:0.2;
 }
