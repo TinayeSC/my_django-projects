@@ -3,13 +3,13 @@ This project was intended as my introduction to Django and as a means of further
 
 Within these Django projects there are two different websites; one in the folder 'capstone' and one in the folder 'hyperion'. 
 
-##Capstone Project 
+## Capstone Project 
 The capstone project is the most recent django project I have completed. It is a fake website which I made for one of my friends who makes music. The website has simple functionality of switching between the home page, merchnadise page, and album page. I did not add any function to most of the price buttons, however I want to add a basket function in the future. So far, the main functionaility is playing the UouTube video of the song and embedding a spotify link to the song within the website. 
 
-###Installation
+### Installation
 To install the project, I suggest cloning this repository using Github Desktop. Github does not support django websites so you will need the files on your own device if you wish to run the websites. If you struggle to clone the repositories to your own device, you could download each file directly from my github page; however, this will take much longer. 
 
-##Usage
+## Usage
 Once you have installed or downloaded the project succesfully. Make sure that you know the path of the project. Next you need to make a new virtual environment. 
 
 python3 -m venv /path/to/new/virtual/environment
@@ -28,5 +28,5 @@ Latly, you need to run the server with this line of code.
 python3 manage.py runserver 
 
 
-##Credits 
+## Credits 
 The music and visuals used in the capstone project are from Chosan. Links to him are in the project. The clothing in the capstone project is from @bywonderkid on Instagram. Many of the techniques used were learnt from the HyperionDev software engineering bootcamp, and the blogs on the hyperion project are ones from my previous studies. 
