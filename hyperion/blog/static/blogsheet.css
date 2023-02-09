@@ -10,7 +10,23 @@ html{
 p{
 
 	color: white;
+	font-size: medium;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: justify ;
+	
 
+}
+
+#body{
+	padding-left: 10%;
+	padding-right: 10%;
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: justify ;
+}
+
+#body p{
+	font-size: 30px;
 }
 
 h1{
