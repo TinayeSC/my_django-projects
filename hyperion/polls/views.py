@@ -24,11 +24,13 @@ def index(request):
     :param latest_question_list: This orders, in a list, the polls by the date that they were published
     :type latest_question_list: list
     :param context: This creates a dictionary, with the corresponding text and poll.
-    :type context: dictionary""" 
+    :type context: dictionary
+    
+    """ 
         
-        latest_question_list = Question.objects.order_by('-pub_date')[:5]
-        context = {'latest_question_list': latest_question_list}
-        return render(request, "polls/poll.html", context)
+    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    context = {'latest_question_list': latest_question_list}
+    return render(request, "polls/poll.html", context)
    
 @login_required(login_url= '//127.0.0.1:8000/user_auth/login/')  
 def detail(request, question_id):
@@ -37,8 +39,8 @@ def detail(request, question_id):
         :param question: This is a variable storing the question which the user selected. 
         :type question: str
         """ 
-        question = get_object_or_404(Question, pk=question_id)
-        return render(request, 'polls/detail.html', {'question': question})
+    question = get_object_or_404(Question, pk=question_id)
+    return render(request, 'polls/detail.html', {'question': question})
     
 @login_required(login_url='//127.0.0.1:8000/user_auth/login/')  
 def results(request, question_id):
@@ -47,6 +49,7 @@ def results(request, question_id):
     
         :param question: This is a variable storing the question which the user selected. 
         :type question: str
+        
         """ 
         question = get_object_or_404(Question, pk=question_id)
         return render(request, 'polls/results.html', {'question': question})
@@ -65,7 +68,7 @@ def vote(request, question_id):
                 that are on each choice of a poll question. After a tally has been added to this variable
                 the state is stored. 
 
-        """ 
+            """ 
         question = get_object_or_404(Question, pk=question_id)
         try:
             selected_choice = question.choice_set.get(

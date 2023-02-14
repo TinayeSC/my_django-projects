@@ -5,5 +5,8 @@ from django.http import HttpResponse
 
 def index(request):
      """When called by urls.py, this function will open the blog page
-    called index.html"""
-    return render(request,"index.html")
+          called index.html
+          
+          """
+     return render(request,"index.html")
+     
