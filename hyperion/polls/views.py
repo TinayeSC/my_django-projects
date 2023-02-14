@@ -19,6 +19,12 @@ from user_auth import views
 
 @login_required(login_url = '//127.0.0.1:8000/user_auth/login/')
 def index(request):
+    """This function will display the different polls to the user, after they have logged in.
+    
+    :param latest_question_list: This orders, in a list, the polls by the date that they were published
+    :type latest_question_list: list
+    :param context: This creates a dictionary, with the corresponding text and poll.
+    :type context: dictionary""" 
         
         latest_question_list = Question.objects.order_by('-pub_date')[:5]
         context = {'latest_question_list': latest_question_list}
@@ -26,16 +32,40 @@ def index(request):
    
 @login_required(login_url= '//127.0.0.1:8000/user_auth/login/')  
 def detail(request, question_id):
+    """This function will display a specific poll to the user, after they have logged in.
+    
+        :param question: This is a variable storing the question which the user selected. 
+        :type question: str
+        """ 
         question = get_object_or_404(Question, pk=question_id)
         return render(request, 'polls/detail.html', {'question': question})
     
 @login_required(login_url='//127.0.0.1:8000/user_auth/login/')  
 def results(request, question_id):
+        """This function will display the selected poll to the user and the results after they have
+        voted on the poll, after they have logged in.
+    
+        :param question: This is a variable storing the question which the user selected. 
+        :type question: str
+        """ 
         question = get_object_or_404(Question, pk=question_id)
         return render(request, 'polls/results.html', {'question': question})
     
 @login_required(login_url='//127.0.0.1:8000/user_auth/login/')   
 def vote(request, question_id):
+        """This function will allow the user to vote on a specific poll, after they have logged in.
+            This function also stores the result of the user's vote to display later.
+    
+            :param question: This is a variable storing the question which the user selected. 
+            :type question: str
+            :param selected_choice: This variable stores the users choice on the vote. 
+                If the user did not select a choice then an error message will appear, and 
+                they will be prompted to vote again.
+            :param int selected_choice.votes: This is a tally variable. It stores the number of votes
+                that are on each choice of a poll question. After a tally has been added to this variable
+                the state is stored. 
+
+        """ 
         question = get_object_or_404(Question, pk=question_id)
         try:
             selected_choice = question.choice_set.get(
