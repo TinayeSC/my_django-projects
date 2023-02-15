@@ -1,15 +1,14 @@
-FROM python:3
+FROM pypy:latest
 
-
-
-ADD settings.py /
+ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
-COPY . /app
+COPY requirements.txt .
 
-COPY requirements.txt /tmp
-WORKDIR /tmp
-RUN pip install -r requirements.txt 
+RUN pip install -r requirements.txt
 
-WORKDIR / 
-CMD python manage.py runserver
+COPY . .
+
+EXPOSE 8000
+
+CMD ["python", "manage.py", "runserver"]
