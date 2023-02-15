@@ -1,8 +1,12 @@
-version: '3.9'
+version: '3'
 
 services: 
-  django:
-    image: capstone:00.00.01
+  capstone:
     build: .
+    volumes:
+      - .:/django
     ports:
-      - "8000:8000"
+      - 8000:8000
+    image: capstone:django
+    container_name: django_container 
+    command: python manage.py runserver 0.0.0.0:8000

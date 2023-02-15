@@ -1,8 +1,12 @@
-version: '3.9'
+version: '3'
 
 services: 
-  django:
-    image: hyperion1:00.00.01
+  hyperion:
     build: .
+    volumes:
+      - .:/django
     ports:
-      - "8000:8000"
+      - 8000:8000
+    image: hyperion:django
+    container_name: django_container1
+    command: python manage.py runserver 0.0.0.0:8000
