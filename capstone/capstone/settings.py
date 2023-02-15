@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'home',
     'albums',
     'merch',
+    'docs',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
