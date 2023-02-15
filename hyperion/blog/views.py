@@ -4,4 +4,9 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return render(request,"index.html")
+     """When called by urls.py, this function will open the blog page
+          called index.html
+          
+          """
+     return render(request,"index.html")
+     
