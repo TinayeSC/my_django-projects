@@ -11,7 +11,13 @@ This project was my first exploration into django, through the guidance of the H
 
 
 ### Installation
-To install the project, I suggest cloning this repository using Github Desktop. Github does not support django websites so you will need the files on your own device if you wish to run the websites. If you struggle to clone the repositories to your own device, you could download each file directly from my github page; however, this will take much longer. 
+To install the project, I suggest cloning this repository using Github Desktop. Github does not support django websites so you will need the files on your own device if you wish to run the websites. Additionally, make sure that you have docker desktop installed so that all the necessary modules can be installed seamlessley. Once you have acces to the repository, change directory into one of the projects. 
+
+e.g cd my_django/capstone
+
+Once inside one of the projects, simply use the docker-compose up command and the django websites should run. If you do not want to use docker, below is a step by step guide to starting the site without docker. 
+
+
 
 ### Usage
 Once you have installed or downloaded the project succesfully. Make sure that you know the path of the project. Next you need to make a new virtual environment. 
