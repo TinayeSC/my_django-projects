@@ -15,7 +15,7 @@ To install the project, I suggest cloning this repository using Github Desktop. 
 
 e.g cd my_django/capstone
 
-Once inside one of the projects, simply use the docker-compose up command and the django websites should run. If you do not want to use docker, below is a step by step guide to starting the site without docker. 
+Once inside one of the projects, simply use the docker-compose up command and the django websites should run. If you do not want to use docker, below is a step by step guide to starting the site without docker; although, you will need to open requirements.txt and install each module individually before following the steps below.
 
 
 
